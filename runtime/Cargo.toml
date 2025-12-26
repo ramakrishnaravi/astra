@@ -1,0 +1,18 @@
+[package]
+name = "astra-runtime"
+version = "0.1.0"
+edition = "2024"
+license = "Eclipse Public License - v 2.0"
+
+description = "Astra core tensor runtime (stable C ABI)"
+author = "Ramakrishna Ravi"
+readme = "../README.md"
+
+[lib]
+name = "astra"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+
+[features]
+default = []
