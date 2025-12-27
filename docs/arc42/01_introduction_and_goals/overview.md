@@ -2,13 +2,15 @@
 
 ## 1.1 Introduction
 
-Astra is an ABI stable, rust native tensor runtime that prioritizes reproducibility, and long-term reliability and designed as **infrastructure**.
+Astra is an ABI stable, rust native tensor runtime that prioritizes reproducibility, and reliability and designed as **infrastructure**.
 
 What started as reproducible builds of existing ml stacks targeting different builds has driven me into a rabbit hole of issues and was the main reason to start this project. The main intention is to address problems in existing ML stacks i.e: unstable ABIs, vague dependency management, implicit assumptions and poor reproducible builds.
 
-The intention of Astra is not to replace existing ML stacks, but to define a small, explicit, and stable core C ABI that other systems can safely build upon. The intention is to eliminate hidden global state, treat CUDA and ROCm as infrastructures and avoid ABI fragility.
+The intention of Astra is not to replace existing ML stacks, but to define a small, explicit, and stable core C ABI that other systems can safely build upon. The intention is to eliminate hidden global state, treat CUDA and ROCm as infrastructures and avoid ABI fragility and not to deviate from the semantics of defined ABI.
 
 Python and other languages are just clients and not the owners of memory or execution. The system is designed to be a basis on which other systems can build upon.
+
+
 ---
 
 ## 1.2 Purpose of the System
